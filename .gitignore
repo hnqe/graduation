@@ -1,0 +1,67 @@
+# Byte-compiled / packaged files
+*.class
+*.war
+*.ear
+*.jar
+
+# Log files
+*.log
+*.out
+*.err
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+gradle-app.setting
+
+# IDE directories and project files
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse/STS
+.project
+.classpath
+.settings/
+.springBeans
+
+# VSCode
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Coverage and build reports
+jacoco.exec
+build/reports/
+build/libs/
+
+# Node.js if front-end or mixed project
+node_modules/
+package-lock.json
+yarn.lock
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+.env
+
+# OS generated files
+Thumbs.db
+Desktop.ini
