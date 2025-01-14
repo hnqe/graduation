@@ -4,7 +4,6 @@ import Plot from 'react-plotly.js';
 function Plot2D({ constraints, solution, xRange = [0, 10], yRange = [0, 10] }) {
   const step = 0.1;
   let lines = [];
-  let feasibleRegion = [];
   let extremePoints = [];
 
   // 1) Gerar linhas para cada restrição
