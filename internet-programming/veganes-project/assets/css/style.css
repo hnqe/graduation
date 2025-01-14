@@ -1,0 +1,107 @@
+/* Escurecendo o banner */
+
+html, body {
+    height: 100%; /* Garante que o body e o html ocupem 100% da altura da viewport */
+    margin: 0; /* Remove margens automáticas */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o body ocupar no mínimo a altura da tela */
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar todo o espaço disponível */
+}
+
+.banner {
+    background-image: url('https://media.blogto.com/articles/20180531-2048-Rosalinda18.jpg?width=1300&quality=70');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    min-height: 400px; /* Garante altura mínima */
+    position: relative;
+    z-index: 1; /* Garante que o banner esteja na camada correta */
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece o banner para destaque do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-overlay h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 2; /* Garante que o texto fique acima da sobreposição */
+}
+
+/* Ajustes para a seção principal */
+.principal {
+    padding: 3em 0;
+    background-color: #f9f9f9;
+}
+
+.card-admin {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer {
+    background-color: #343a40;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+}
+.modal-footer {
+    background-color: #f8f9fa;
+}
+.table {
+    margin-top: 20px;
+}
+.btn-primary, .btn-danger {
+    margin-right: 5px;
+}
+.card-admin {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.img-fixed-size {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Faz com que a imagem cubra o contêiner sem perder a proporção */
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #ddd; /* Borda leve para destacar a imagem */
+    overflow: hidden; /* Garantir que a imagem não ultrapasse o contêiner */
+}
+
